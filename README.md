@@ -3,5 +3,5 @@
 ## Development
 
 
-  npm install
+  npm install &&
   npm start
