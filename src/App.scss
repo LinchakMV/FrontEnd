@@ -301,3 +301,147 @@ body {
   color: red !important;
   border-color: red !important;
 }
+
+@media screen and (max-width: 748px) {
+  .home{
+    &_menu { 
+      p{
+        margin-left: 20px;
+      }
+      &_list {
+        margin-right: 20px;
+      }
+    }
+    &_name {
+      h1 {
+        font-size: 36px;
+      }
+      h3 {
+        font-size: 20px;
+      }
+    }
+  }
+  .about {
+    &_title {
+      margin-top: 0px;
+    }
+    &_content {
+      p {
+        font-size: 12px;
+      }
+      img {
+        width: 125px;
+        height: 105px;
+      }
+    }
+  }
+  .skills {
+    &_item {
+      p {
+        width: 187px;
+        font-size: 24px;
+      }
+    }
+    &_list {
+      max-width: 405px;
+      width: 100%;
+      &_circle {
+        width: 17px;
+        height: 17px;
+      }
+    }
+  }
+  .contact {
+    &_content {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      &_info {
+        display: flex;
+        margin: 0;
+        >div {
+          margin: 0 10px;
+        }
+      }
+    }
+  }
+  .footer {
+    &_contact {
+      margin-left: 20px;
+    }
+    &_right {
+      margin-right: 20px;
+    }
+  }
+}
+@media screen and (max-width: 458px){
+  .home{
+    &_menu {
+      p {
+        font-size: 16px;
+      }
+      &_item a{
+        font-size: 14px;
+      }
+    }
+    &_name {
+      h1 {
+        font-size: 26px;
+      }
+      h3 {
+        font-size: 16px;
+      }
+    }
+  }
+  .about {
+    margin-top: -30px;
+    &_title {
+      margin: 0;
+    }
+    &_content {
+      flex-direction: column;
+      justify-content: flex-start;
+      h5 {
+        padding-top: 0px;
+        padding-bottom: 10px;
+      }
+      p {
+        max-width: 400px;
+      }
+      &_goals {
+        margin-bottom: 15px;
+        p{
+          text-align: left;
+        }
+      }
+      img {
+        display: none;
+      }
+    }
+  }
+  .skills {
+    &_title {
+      margin-bottom: 20px;
+    }
+    &_item {
+      flex-direction: column;
+      margin-bottom: 10px;
+      p {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+  .contact {
+    &_content{
+      &_form {
+        input, textarea{
+          width: 100%;
+        }
+      }
+    }
+  }
+  .footer {
+    
+  }
+}
